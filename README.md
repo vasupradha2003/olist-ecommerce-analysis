@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Olist E-Commerce Order Funnel & Delivery Performance Analysis
 
 ## Overview
@@ -44,3 +45,7 @@ olist-ecommerce-analysis/
 
 ## Dataset
 [Brazilian E-Commerce Public Dataset by Olist — Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+=======
+# olist-ecommerce-analysis
+E-Commerce funnel &amp; delivery analysis — Python, Pandas, MySQL, Tableau
+>>>>>>> d8f1fbd5411375b19000001f874660e54a500f8b
