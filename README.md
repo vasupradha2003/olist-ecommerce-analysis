@@ -2,8 +2,8 @@
 # Olist E-Commerce Order Funnel & Delivery Performance Analysis
 
 ## Overview
-End-to-end product analytics project analysing 99,441 orders from 
-Olist Brazil (2016–2018) using Python, Pandas, MySQL and Tableau.
+End-to-end product analytics project analysing 99,441 orders from the 
+Brazilian e-commerce platform Olist (2016–2018) using Python, Pandas, MySQL and Tableau Public.
 
 ## Key Findings
 - 97% delivery rate but 6.8% of orders arrive late
@@ -11,29 +11,48 @@ Olist Brazil (2016–2018) using Python, Pandas, MySQL and Tableau.
 - SP and RJ drive 54% of total orders — highest priority delivery fix
 - 96.9% of customers ordered only once — major retention opportunity
 
+## Product Recommendation
+Prioritize delivery reliability in SP and RJ over new feature development. 
+A 10% improvement in on-time delivery in these 2 states would protect 
+54% of total order volume from churn risk.
+
+
 ## Tools Used
 |     Tool        | Purpose                              |
 |-----------------|--------------------------------------|
-| Python + Pandas | Data cleaning and pipeline           |
+| Python          | Data extraction and pipeline         |
+| Pandas          | Data cleaning and transformation     |
 | MySQL           | Data storage and SQL analysis        |
 | Tableau Public  | Interactive dashboard and data story |
 
 ## Project Structure
 ```
 olist-ecommerce-analysis/
-├── notebooks/
-│   ├── 01_orders_cleaning.ipynb
-│   ├── 02_customers_cleaning.ipynb
-│   ├── 03_items_cleaning.ipynb
-│   ├── 04_reviews_cleaning.ipynb
-│   └── 05_merge_and_export.ipynb
-├── sql/
-│   └── olist_sql_analysis.sql
+│
 ├── data/
-│   ├── cleaned_orders.csv
-│   ├── cleaned_customers.csv
-│   ├── cleaned_items.csv
-│   └── cleaned_reviews.csv
+│   ├── raw/                        ← original Olist dataset files
+│   └── processed/
+│       ├── cleaned_customers.csv
+│       ├── cleaned_items.csv
+│       ├── cleaned_orders.csv
+│       └── cleaned_reviews.csv
+│
+├── notebooks/
+│   ├── orders_clean.ipynb          ← orders data cleaning
+│   ├── customers_clean.ipynb       ← customers data cleaning
+│   ├── items_clean.ipynb           ← items data cleaning
+│   ├── reviews_clean.ipynb         ← reviews data cleaning
+│   └── merge and export.ipynb      ← merge all + export to MySQL
+│
+├── sql/
+│   └── analysis of ecommerce_olist_db.sql   ← all 14 analysis queries
+│
+├── reports/
+│   └── story.pdf                   ← 8-slide data story
+│
+├── dashboard/
+│   └── Dashboard results/          ← CSV exports for Tableau
+│
 └── README.md
 ```
 
@@ -45,7 +64,4 @@ olist-ecommerce-analysis/
 
 ## Dataset
 [Brazilian E-Commerce Public Dataset by Olist — Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
-=======
-# olist-ecommerce-analysis
-E-Commerce funnel &amp; delivery analysis — Python, Pandas, MySQL, Tableau
->>>>>>> d8f1fbd5411375b19000001f874660e54a500f8b
+
