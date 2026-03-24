@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Olist E-Commerce Order Funnel & Delivery Performance Analysis
 
 ## Overview
@@ -57,7 +56,7 @@ olist-ecommerce-analysis/
 ```
 
 ## Live Dashboard
-[View on Tableau Public](https://public.tableau.com/app/profile/vasupradha.v3779/vizzes)
+[View on Tableau Public](https://public.tableau.com/app/profile/vasupradha.v3779/viz/Olist-Ecommerce-Order-Funnel-Analysis/Dashboard1)
 
 ## story 
 [download to view the story](https://drive.google.com/file/d/1F4k9EJ9vgF5ojwVYUMLWpBaxLS8CkuRa/view?usp=sharing)
